@@ -1,8 +1,8 @@
-import { checkHealthService, dummyService, userService } from "@src/services";
+import { checkHealthService, dummyService, setupService } from "@src/services";
 import { DummyController } from "./dummy.controller";
 import { HealthController } from "./health.controller";
-import { UserController } from "./user.controller";
+import { SetupController } from "./setup.controller";
 
 export const dummyController = new DummyController(dummyService);
 export const healthController = new HealthController(checkHealthService);
-export const userController = new UserController(userService);
+export const setupController = new SetupController(setupService);

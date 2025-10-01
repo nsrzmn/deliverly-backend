@@ -1,13 +1,13 @@
 import { DummyService } from "./dummy.service";
 import { CheckHealthService } from "./health.service";
-import { UserService } from "./user.service";
+import { SetupService } from "./setup.service";
 
 const dummyService: DummyService = new DummyService()
 const checkHealthService: CheckHealthService = new CheckHealthService()
-const userService: UserService = new UserService()
+const setupService: SetupService = new SetupService()
 
 export {
     dummyService,
     checkHealthService,
-    userService
+    setupService
 }
